@@ -13,19 +13,16 @@
   </head>
 <body>
 	<script type="text/javascript">
-		function preload(arrayOfImages) {
-		    $(arrayOfImages).each(function(){
-		        $('<images/>')[0].src = this;
-		        // Alternatively you could use:
-		        // (new Image()).src = this;
-		    });
+		var imageArray = new Array();
+
+		window.onload = function(){
+		    for(i = 0; i <= maxIndex; ++i)
+		    {
+		        var image = new Image();
+		        image.src = "images/hero-min" + Number(i + 1) + ".jpg";
+		        imageArray[i] = image;
+		    }
 		}
-
-		// Usage:
-
-		preload([
-		    'images/hero-min.jpg'
-		]);
 	</script>
 
 	
