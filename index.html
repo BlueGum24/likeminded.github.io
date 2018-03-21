@@ -12,7 +12,23 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css">
   </head>
 <body>
+	<script type="text/javascript">
+		function preload(arrayOfImages) {
+		    $(arrayOfImages).each(function(){
+		        $('<images/>')[0].src = this;
+		        // Alternatively you could use:
+		        // (new Image()).src = this;
+		    });
+		}
 
+		// Usage:
+
+		preload([
+		    'images/hero-min.jpg'
+		]);
+	</script>
+
+	
 	<!--header-->
 	<header>
 		<div class="row">
