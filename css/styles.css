@@ -8,7 +8,7 @@ body {
 }
 
 header {
-	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/hero-min.jpg);
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/hero-min1.jpg);
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
@@ -39,7 +39,12 @@ header {
 	border: 1px solid #fff;
 }
 
-.row {
+.logo {
+	margin-top: 30px;
+	float: left;
+}
+
+.navbar {
 	max-width: 1200px;
 	margin: auto;
 }
