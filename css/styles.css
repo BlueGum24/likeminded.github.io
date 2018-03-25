@@ -7,13 +7,26 @@ body {
 	font-family: monospace;
 }
 
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
 header {
 	position: relative;
 	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/hero-min1.jpg);
-	height: 100vh;
+	background-attachment: fixed;
 	background-size: cover;
-	background-position: center;
-	
+	height: 100vh;
 }
 
 .main-nav {
@@ -31,8 +44,8 @@ header {
 	color: #fff;
 	text-decoration: none;
 	padding: 5px 20px;
-	margin-right: 20px;
-	margin-left: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
 	font-size: 15px;
 }
 
@@ -87,17 +100,24 @@ h1 {
 
 .btn {
 	border: 1px solid #fff;
-	padding: 10px 30px;
+	padding: 15px 20px;
 	color: #fff;
 	text-decoration: none;
 	margin-right: 5px;
-	font-size: 13px;
+	font-size: 18px;
 	text-transform: uppercase;
 }
 
 .btn-one {
-	background-color: darkorange;
+	background-color: 	#181818;
+	color: #fff;
 	font-family: "Roboto", sans-serif;
+}
+
+.btn-one:hover {
+	background-color: #fff;
+	color: #181818;
+	transition: all 0.5s ease-in;
 }
 
 .btn-two {
@@ -105,7 +125,8 @@ h1 {
 }
 
 .btn-two:hover {
-	background-color: darkorange;
+	background-color: #fff;
+	color: #181818;
 	transition: all 0.5s ease-in;
 }
 
@@ -119,4 +140,92 @@ h1 {
   	text-align: center;
   	z-index: 10;
   	animation: shrink 5s infinite alternate;
+}
+
+
+/* Section 1 */
+.section1 {
+	position: relative;
+ 	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/section1.jpg);
+	min-height: 100vh;
+	background-size: cover;
+	background-attachment: fixed;
+ }
+
+ .hero2 {
+ 	margin-top: 250px;
+ 	text-align: center;
+ }
+
+ .text-box {
+ 	margin: 0 auto;
+ 	max-width: 700px;
+ 	padding: 30px 45px; 
+ }
+
+ .text-box p {
+ 	font-size: 18px;
+ }
+
+
+
+
+
+/*Section 2*/
+.section2 {
+	position: relative;
+ 	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/section2.jpg);
+	min-height: 100vh;
+	background-size: cover;
+	background-attachment: fixed;
+ }
+
+
+
+
+
+/*Section 3*/
+.section3 {
+	position: relative;
+ 	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/section3.jpg);
+	min-height: 100vh;
+	background-size: cover;
+	background-attachment: fixed;
+ }
+
+
+
+footer {
+	background-color: #202020;
+	padding: 30px 0;
+	text-align: center;
+}
+
+.container-fluid ul {
+	margin: 0 auto;
+}
+
+.container-fluid ul li {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.container-fluid li i {
+	text-decoration: none;
+	padding: 5px 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+	font-size: 45px;
+}
+
+.fa-facebook-square, .fa-twitter-square, .fa-linkedin-square, .fa-instagram, .fa-soundcloud {
+	color: #989898 ;
+}
+
+.fa-facebook-square:hover, .fa-twitter-square:hover, .fa-linkedin-square:hover, .fa-instagram:hover, .fa-soundcloud:hover {
+	color: 	#D8D8D8;
+}
+
+.container-fluid p {
+	color: #fff;
 }
